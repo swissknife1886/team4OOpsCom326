@@ -7,8 +7,6 @@ public class Program
         MainMenu();
     }
 
-
-
     static void MainMenu() 
     {
         Console.WriteLine("Main Menu");
