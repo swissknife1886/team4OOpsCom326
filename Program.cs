@@ -153,7 +153,7 @@ public class Program
     public class Program
     {
             public static void Main(string[] args)
-    {
+            {
                 // Register users
                 User.Register("caolan158", "xyZk65", "mullincaolan@gmail.com", "07562140759", "15 Claggan Road", "Omagh");
                 User.Register("Syed675", "89Cv2", "meeransyed@gmail.com", "0987654321", "456 Derry Rd", "Derry");
@@ -178,6 +178,6 @@ public class Program
                 User user = User.Login("caolan158", "xyZk65");
                 User user = User.Login("Syed675", "89Cv2");
 
-    }
+                }
     }
 }
