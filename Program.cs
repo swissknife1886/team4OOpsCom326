@@ -152,32 +152,31 @@ public class Program
     }
     public class Program
     {
-            public static void Main(string[] args)
-            {
-                // Register users
-                User.Register("caolan158", "xyZk65", "mullincaolan@gmail.com", "07562140759", "15 Claggan Road", "Omagh");
-                User.Register("Syed675", "89Cv2", "meeransyed@gmail.com", "0987654321", "456 Derry Rd", "Derry");
-        
-                // login for administrators
-                Admin admin = new Admin(1, "administrator1", "Code567", "malonekevin@gmail.com, "55890126", "47 Loughlin Rd", "Armagh City");
-                Admin admin = new Admin(2, "administrator2", "Code567", "devinecormac@gmail.com", "1127698", "17 Omagh Rd", "Omagh");
-        
-                // View users (admin only)
-                Admin.ViewAllUsers();
-        
-                // Deleting users (admin only)
-                Admin.DeleteUser(2);
-        
-                //Managing product stocklist (admin only)
-                Admin.AddProduct("Samsung TV", 999.99M);
-                Admin.AddItemToStock("Samsung TV", 50);
-                Admin.UpdateStock("Samsung TV", 100);
-                Admin.RemoveProduct("Samsung TV");
-        
-                // User Login
-                User user = User.Login("caolan158", "xyZk65");
-                User user = User.Login("Syed675", "89Cv2");
-
-                }
+        public static void Main(string[] args)
+        {
+            // Register users
+            User.Register("caolan158", "xyZk65", "mullincaolan@gmail.com", "07562140759", "15 Claggan Road", "Omagh");
+            User.Register("Syed675", "89Cv2", "meeransyed@gmail.com", "0987654321", "456 Derry Rd", "Derry");
+            
+            // login for administrators
+            Admin admin = new Admin(1, "administrator1", "Code567", "malonekevin@gmail.com, "55890126", "47 Loughlin Rd", "Armagh City");
+            Admin admin = new Admin(2, "administrator2", "Code567", "devinecormac@gmail.com", "1127698", "17 Omagh Rd", "Omagh");
+            
+            // View users (admin only)
+            Admin.ViewAllUsers();
+            
+            // Deleting users (admin only)
+            Admin.DeleteUser(2);
+            
+            //Managing product stocklist (admin only)
+            Admin.AddProduct("Samsung TV", 999.99M);
+            Admin.AddItemToStock("Samsung TV", 50);
+            Admin.UpdateStock("Samsung TV", 100);
+            Admin.RemoveProduct("Samsung TV");
+            
+            // User Login
+            User user = User.Login("caolan158", "xyZk65");
+            User user = User.Login("Syed675", "89Cv2");
+        }
     }
 }
