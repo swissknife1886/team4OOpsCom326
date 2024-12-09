@@ -1,16 +1,19 @@
 using System;
-
-public class Program 
+namespace team4OOpsCom326
 {
-   public static void Main(string[] args)
+    class Program
     {
-        MainMenu();
-    }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to our store");
+            MainMenu();
+        }
 
-    static void MainMenu() 
-    {
-        Console.WriteLine("Main Menu");
-    
+        static void MainMenu()
+        {
+            Console.WriteLine("Main Menu");
+
+        }
     }
 }
 
